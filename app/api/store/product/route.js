@@ -11,7 +11,7 @@ export async function POST(request){
         const storeId = await authSeller(userId)
 
         if(!storeId){
-            return NextResponse.json({error: "not authorized"},{status:403})
+            return NextResponse.json({error: "not authorized"},{status:401})
         }
         // get the data from the form 
         const formData = await request.formData();
@@ -28,12 +28,12 @@ export async function POST(request){
             }
 
             //Upload Images to Imagekit
-            const imageUrl = await Promise.all(images.map(async(image)=>{
+            const imagesUrl = await Promise.all(images.map(async(image)=>{
                 const buffer = Buffer.from(await image.arrayBuffer());
                 const response = await imagekit.upload({
-                    file : buffer,
+                    file : buffer.toString("base64"),
                     fileName : image.name,
-                    folder: "products"
+                    folder: "products",
                 })
                 const url = imagekit.url({
                     path: response.filePath,
@@ -75,7 +75,8 @@ export async function GET(request){
         const storeId = await authSeller(userId)
 
         if(!storeId){
-            return NextResponse.json({error: "not authorized"},{status:403})
+            return NextResponse.json({error: "not authorized"},{
+            status:401})
         }
         const products = await prisma.product.findMany({
             where: {storeId : storeId},

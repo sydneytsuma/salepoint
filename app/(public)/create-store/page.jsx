@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation"
 import { useAuth } from "@clerk/clerk-react"
 import axios from "axios"
 
+
 export default function CreateStore() {
 
     const {user} = useUser()
@@ -59,9 +60,9 @@ export default function CreateStore() {
             formData.append("address", storeInfo.address);
             formData.append("image", storeInfo.image);
 
-            const { data } =await axios.post('/api/api/store/create', formData, {
+            const { data } =await axios.post('/api/store/create', formData, {
             headers: { Authorization: `Bearer ${token}` }})
-            toast.success(data.message)
+            toast.success(data.message ?? `Status: ${data?.status}`)
         
         } catch (error) {
             

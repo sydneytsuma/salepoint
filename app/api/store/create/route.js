@@ -2,6 +2,7 @@ import imagekit from "@/configs/imageKit";
 import { getAuth} from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { Upload } from "lucide-react";
 
 //create the store 
 
@@ -30,7 +31,7 @@ export async function POST(request) {
 
         // check if store already exists then send the status of the store 
         if(store){
-            return NextResponse.json({status: store.status})
+            return NextResponse.json({message: `already registered ${store.status}`, status: store.status})
         }
 
         //check if username already exists
@@ -42,6 +43,7 @@ export async function POST(request) {
             return NextResponse.json({error: "username already taken"},{status:400})
         }
 
+        //
         //image upload to imagekit
         const buffer = Buffer.from(await image.arrayBuffer());
         
@@ -50,6 +52,7 @@ export async function POST(request) {
             file : buffer.toString('base64'),
             fileName : image.name,
             folder: "logos",
+                    
         });
 
         const optimizedImage = imagekit.url({
