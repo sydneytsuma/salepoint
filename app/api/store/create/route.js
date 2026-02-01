@@ -2,7 +2,7 @@ import imagekit from "@/configs/imageKit";
 import { getAuth} from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
-import { Upload } from "lucide-react";
+import { upload } from "lucide-react";
 
 //create the store 
 
