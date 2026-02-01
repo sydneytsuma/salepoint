@@ -60,12 +60,6 @@ export async function POST(request) {
                 {width :'512'}]
         });
 
-        //const optimizedImage = (process.env.IMAGEKIT_URL_ENDPOINT +
-          //  "/tr:q-auto,f-webp,w-512" +response.filePath);
-
-
-
-
         const newstore = await prisma.store.create({
             data: {
                 userId,
@@ -75,7 +69,7 @@ export async function POST(request) {
                 email,
                 contact,
                 address,
-                image: optimizedImage,
+                logo: optimizedImage,
                 
             }
         })
