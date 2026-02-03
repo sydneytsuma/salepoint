@@ -1,6 +1,6 @@
 import prisma from "@/lib/prisma";
 import authAdmin from "@/middlewares/authAdmin";
-import { getAuth } from "@clerk/nextjs/dist/types/server";
+import { getAuth } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 
 
@@ -15,7 +15,7 @@ export async function POST(request) {
             {status: 401})
         }
 
-        const {storeId, approve} = await request.json();
+        const {storeId, status} = await request.json();
         
         if(status === 'approved'){
             await prisma.store.update({
@@ -53,6 +53,8 @@ export async function GET(request) {
             where: {status : {in : ['pending', 'rejected']}},
             include: {user: true}
         })
+        console.log("USER NAMES:",stores.map(s => s.user?.name));
+        
         return NextResponse.json({stores})
     } catch (error) {
         console.error(error);

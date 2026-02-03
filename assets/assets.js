@@ -38,7 +38,7 @@ export const categories = ["Baskets", "Sculptures", "Mosaic", "Bowls", "Pots", "
 
 export const dummyRatingsData = [
     { 
-        id: "rat_1", 
+        id: "prod_1", 
         rating: 4.8, 
         review: "Absolutely stunning craftsmanship. The detail on the Yole bangle is incredible. Delivery to Westlands was super fast!", 
         user: { name: 'Peter Omi', image: profile_pic1 }, 
@@ -47,7 +47,7 @@ export const dummyRatingsData = [
         product: { name: 'Yole', category:'Bangles', id:'prod_1'} 
     },
     { 
-        id: "rat_2", 
+        id: "prod_2", 
         rating: 5.0, 
         review: "I bought the Barge bag for my wife and she loves it. Authentic leather and beautiful stitching. Asante sana Afrikima!", 
         user: { name: 'Kobi Mai', image: profile_pic2 }, 
@@ -56,7 +56,7 @@ export const dummyRatingsData = [
         product: { name: 'Barge', category:'Bag', id:'prod_2'} 
     },
     { 
-        id: "rat_3", 
+        id: "prod_3", 
         rating: 4.5, 
         review: "The Beada necklace is a statement piece. It goes well with my kitenge outfits. A bit pricey but worth it.", 
         user: { name: 'Ela Ebe', image: profile_pic3 }, 
@@ -65,7 +65,7 @@ export const dummyRatingsData = [
         product: { name: 'Beada', category:'Necklace', id:'prod_3'} 
     },
     { 
-        id: "rat_4", 
+        id: "prod_4", 
         rating: 4.9, 
         review: "Hedwu sculpture is now the centerpiece of my living room in Kilimani. The soapstone finish is smooth and cool to the touch.", 
         user: { name: 'Peter Omi', image: profile_pic1 }, 
@@ -74,131 +74,15 @@ export const dummyRatingsData = [
         product: { name: 'Hedwu', category:'Sculpture', id:'prod_4'} 
     },
     { 
-        id: "rat_5", 
+        id: "prod_5", 
         rating: 4.2, 
         review: "Great quality Keat basket. Strong weave, perfect for shopping at the market. Packaging was slightly damaged but item was fine.", 
         user: { name: 'Kobi Mai', image: profile_pic2 }, 
         createdAt: 'Mon Jan 12 2026 13:30:00 GMT+0300 (East Africa Time)', 
         updatedAt: 'Mon Jan 12 2026 13:30:00 GMT+0300 (East Africa Time)', 
         product: { name: 'Keat', category:'Basket', id:'prod_5'} 
-    },
-    { 
-        id: "rat_6", 
-        rating: 5.0, 
-        review: "Kulele mosaic art is breathtaking. The colors pop so vividly. Highly recommend for anyone looking for local art.", 
-        user: { name: 'Ela Ebe', image: profile_pic3 }, 
-        createdAt: 'Tue Jan 13 2026 18:05:45 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Tue Jan 13 2026 18:05:45 GMT+0300 (East Africa Time)', 
-        product: { name: 'Kulele', category:'Mosaic', id:'prod_6'} 
-    },
-    { 
-        id: "rat_7", 
-        rating: 4.0, 
-        review: "La basket is very handy for storage. The open weave is unique. Good value for money.", 
-        user: { name: 'Peter Omi', image: profile_pic1 }, 
-        createdAt: 'Wed Jan 14 2026 11:15:22 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Wed Jan 14 2026 11:15:22 GMT+0300 (East Africa Time)', 
-        product: { name: 'La', category:'Basket', id:'prod_7'} 
-    },
-    { 
-        id: "rat_8", 
-        rating: 4.7, 
-        review: "The Lalo coasters are little pieces of art. My guests always ask where I got them.", 
-        user: { name: 'Ela Ebe', image: profile_pic3 }, 
-        createdAt: 'Thu Jan 15 2026 08:50:10 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Thu Jan 15 2026 08:50:10 GMT+0300 (East Africa Time)', 
-        product: { name: 'Lalo', category:'Mosaic', id:'prod_8'} 
-    },
-    { 
-        id: "rat_9", 
-        rating: 5.0, 
-        review: "Marina is the best laundry basket I've owned. Sturdy seagrass and looks great in the corner.", 
-        user: { name: 'Kobi Mai', image: profile_pic2 }, 
-        createdAt: 'Fri Jan 16 2026 15:20:33 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Fri Jan 16 2026 15:20:33 GMT+0300 (East Africa Time)', 
-        product: { name: 'Marina', category:'Basket', id:'prod_9'} 
-    },
-    { 
-        id: "rat_10", 
-        rating: 4.8, 
-        review: "Monuko sculpture is elegant. The ebony wood is polished to perfection.", 
-        user: { name: 'Peter Omi', image: profile_pic1 }, 
-        createdAt: 'Sat Jan 17 2026 19:40:05 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Sat Jan 17 2026 19:40:05 GMT+0300 (East Africa Time)', 
-        product: { name: 'Monuko', category:'Sculpture', id:'prod_10'} 
-    },
-    { 
-        id: "rat_11", 
-        rating: 4.3, 
-        review: "Balea nesting baskets are colorful and practical. I use them for serving dry snacks.", 
-        user: { name: 'Ela Ebe', image: profile_pic3 }, 
-        createdAt: 'Sun Jan 18 2026 12:10:50 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Sun Jan 18 2026 12:10:50 GMT+0300 (East Africa Time)', 
-        product: { name: 'Balea', category:'Basket', id:'prod_11'} 
-    },
-    { 
-        id: "rat_12", 
-        rating: 4.6, 
-        review: "Mule mirror is a stunner. The turquoise glass inlays really catch the light.", 
-        user: { name: 'Kobi Mai', image: profile_pic2 }, 
-        createdAt: 'Mon Jan 19 2026 14:05:15 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Mon Jan 19 2026 14:05:15 GMT+0300 (East Africa Time)', 
-        product: { name: 'Mule', category:'Mosaic', id:'prod_12'} 
-    },
-    { 
-        id: "rat_13", 
-        rating: 4.9, 
-        review: "Same bowl has beautiful grain. I use it for salads and it's held up well.", 
-        user: { name: 'Peter Omi', image: profile_pic1 }, 
-        createdAt: 'Tue Jan 20 2026 09:30:25 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Tue Jan 20 2026 09:30:25 GMT+0300 (East Africa Time)', 
-        product: { name: 'Same', category:'Bowl', id:'prod_13'} 
-    },
-    { 
-        id: "rat_14", 
-        rating: 5.0, 
-        review: "Poiwo pot makes the best stews. Very authentic traditional cooking experience.", 
-        user: { name: 'Ela Ebe', image: profile_pic3 }, 
-        createdAt: 'Wed Jan 21 2026 17:55:40 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Wed Jan 21 2026 17:55:40 GMT+0300 (East Africa Time)', 
-        product: { name: 'Poiwo', category:'Pots', id:'prod_14'} 
-    },
-    { 
-        id: "rat_15", 
-        rating: 4.4, 
-        review: "Wiro centerpiece is very modern. A bit heavy, but looks expensive.", 
-        user: { name: 'Kobi Mai', image: profile_pic2 }, 
-        createdAt: 'Thu Jan 22 2026 13:25:10 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Thu Jan 22 2026 13:25:10 GMT+0300 (East Africa Time)', 
-        product: { name: 'Wiro', category:'Mosaic', id:'prod_15'} 
-    },
-    { 
-        id: "rat_16", 
-        rating: 4.1, 
-        review: "Dia bowl is cute, the beadwork is nice. Smaller than I expected though.", 
-        user: { name: 'Peter Omi', image: profile_pic1 }, 
-        createdAt: 'Fri Jan 23 2026 10:45:55 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Fri Jan 23 2026 10:45:55 GMT+0300 (East Africa Time)', 
-        product: { name: 'Dia', category:'Bowl', id:'prod_16'} 
-    },
-    { 
-        id: "rat_17", 
-        rating: 4.7, 
-        review: "Sami bangles fit perfectly. The copper and brass mix is very trendy.", 
-        user: { name: 'Ela Ebe', image: profile_pic3 }, 
-        createdAt: 'Sat Jan 24 2026 16:15:30 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Sat Jan 24 2026 16:15:30 GMT+0300 (East Africa Time)', 
-        product: { name: 'Sami', category:'Bangles', id:'prod_17'} 
-    },
-    { 
-        id: "rat_18", 
-        rating: 5.0, 
-        review: "Nute vase is a masterpiece. The floral mosaic work is top notch.", 
-        user: { name: 'Kobi Mai', image: profile_pic2 }, 
-        createdAt: 'Sun Jan 25 2026 11:50:20 GMT+0300 (East Africa Time)', 
-        updatedAt: 'Sun Jan 25 2026 11:50:20 GMT+0300 (East Africa Time)', 
-        product: { name: 'Nute', category:'Mosaic', id:'prod_18'} 
     }
+    
 ]
 
 export const dummyStoreData = {

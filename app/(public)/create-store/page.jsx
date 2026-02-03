@@ -6,7 +6,7 @@ import toast from "react-hot-toast"
 import Loading from "@/components/Loading"
 import { useUser } from "@clerk/nextjs"
 import { useRouter } from "next/navigation"
-import { useAuth } from "@clerk/clerk-react"
+import { useAuth } from "@clerk/nextjs"
 import axios from "axios"
 
 

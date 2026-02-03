@@ -9,9 +9,10 @@ export async function GET(request){
 
     try {
         const {userId} =getAuth(request)
-    const isAdmin = await authAdmin(userId)
-    if(!isAdmin){
-        return NextResponse.json({error:"not authorized"},{status:401})
+        const isAdmin = await authAdmin(userId)
+        if(!isAdmin){
+            
+            return NextResponse.json({error:"not authorized"},{status:401})
     }
 
     // get total orders
