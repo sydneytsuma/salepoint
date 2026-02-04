@@ -25,7 +25,7 @@ export async function POST(request) {
         }
 
         // check if user has already registered a store 
-        const store = await prisma.store.findFirst({
+        const store = await prisma.store.findUnique({
             where: {userId : userId}
         })
 
